@@ -7,8 +7,9 @@ use crate::Route;
 pub fn view() -> Html {
     html! {
         <>
-            <Link<Route> to={Route::Home}>{ "Home" }</Link<Route>>
-            <Link<Route> to={Route::Contact}>{ "Contact" }</Link<Route>>
+            <Link<Route> to={Route::Home}>{"Home"}</Link<Route>>
+            <span>{"  / "}</span>
+            <Link<Route> to={Route::Contact}>{"Contact"}</Link<Route>>
         </>
     }
 }

@@ -29,11 +29,11 @@ pub fn view() -> Html {
     html! {
         <>
             <Nav />
-            <p>{"Home"}</p>
-            <button onclick={onclick_local}>{ "local +1" }</button>
-            <p>{ format!("local {}", local.value) }</p>
-            <button onclick={onclick_global}>{ "global +1" }</button>
-            <p>{ format!("global {}",  global.value) }</p>
+            <p>{"Home"}</p><br />
+            <button onclick={onclick_local}>{"local +1"}</button>
+            <p>{format!("local {}", local.value)}</p>
+            <button onclick={onclick_global}>{"global +1"}</button>
+            <p>{format!("global {}",  global.value)}</p>
         </>
     }
 }
