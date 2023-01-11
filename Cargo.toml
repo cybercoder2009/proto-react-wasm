@@ -1,0 +1,9 @@
+[package]
+name = "react-wasm"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+yew = { version = "0.20.0", features = ["csr"] }
+yewdux = { version = "0.9.0" }
+yew-router = { version = "0.17" }
