@@ -4,7 +4,8 @@ use yew::prelude::{use_state, function_component, html, Html, Callback, MouseEve
 use yewdux::prelude::*;
 
 use crate::store::Global;
-use crate::w_nav::Nav;
+use crate::w_header::Header;
+use crate::w_footer::Footer;
 
 struct Local {
     value: i64
@@ -28,12 +29,15 @@ pub fn view() -> Html {
 
     html! {
         <>
-            <Nav />
-            <p>{"Home"}</p><br />
-            <button onclick={onclick_local}>{"local +1"}</button>
-            <p>{format!("local {}", local.value)}</p>
-            <button onclick={onclick_global}>{"global +1"}</button>
-            <p>{format!("global {}",  global.value)}</p>
+            <Header />
+            <div id="body">
+                <p>{"Home"}</p><br />
+                <button onclick={onclick_local}>{"local +1"}</button>
+                <p>{format!("local {}", local.value)}</p>
+                <button onclick={onclick_global}>{"global +1"}</button>
+                <p>{format!("global {}",  global.value)}</p>
+            </div>
+            <Footer />
         </>
     }
 }

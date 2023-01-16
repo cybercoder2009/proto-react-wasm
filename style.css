@@ -1,0 +1,27 @@
+a { text-decoration: none; }
+ul { list-style: none outside none; margin:0; padding: 0; text-align: center; }
+li { display: inline; margin: 0 10px; list-style: none; }
+
+#header {
+
+}
+#header > div:nth-child(0) {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#header > ul {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 200px;
+}
+
+#body {
+
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+}

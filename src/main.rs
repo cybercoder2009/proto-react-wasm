@@ -1,5 +1,6 @@
 mod store;
-mod w_nav;
+mod w_header;
+mod w_footer;
 mod r_home;
 mod r_contact;
 
